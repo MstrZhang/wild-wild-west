@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Wild Wild West</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <i class="fas fa-star"></i>
+            Wild Wild West
+            <i class="fas fa-star"></i>
+        </h1>
+    </header>
+    <div class="card">
+        <div class="card-header">Select an Option</div>
+        <div class="flex-container">
+            <div class="flex-item" onclick="runPlayer('SHOOT')">
+                <i class="fas fa-hand-point-right fa-6x"></i>
+                <br>
+                Shoot
+            </div>
+            <div class="flex-item" onclick="runPlayer('BLOCK')">
+                <i class="fas fa-shield-alt fa-6x"></i>
+                <br>
+                Block
+            </div>
+            <div class="flex-item" onclick="runPlayer('RELOAD')">
+                <i class="fas fa-sync-alt fa-6x"></i>
+                <br>
+                Reload
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">Game Log</div>
+        <div>
+            You have <span id="player-bullets">0</span> bullets
+            <br>
+            The computer has <span id="comp-bullets">0</span> bullets
+        </div>
+        <hr>
+        <ul id="game-content">
+            <!-- insert the game content here using Javascript -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

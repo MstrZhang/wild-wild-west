@@ -1,0 +1,49 @@
+body {
+    font-family: 'Helvetica';
+    background-color: tomato;
+    color: gold;
+    max-width: 1000px;
+    text-align: left;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+hr {
+    border: 2px solid firebrick;
+}
+
+.card {
+    background-color: crimson;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 2em;
+}
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    margin: 3em;
+}
+.flex-item {
+    padding: 35px;
+    margin: 0 15px 0 15px;
+    border: 1px solid gold;
+    border-radius: 15px;
+    text-align: center;
+    flex-grow: 1;
+}
+.flex-item:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+#player-bullets, #comp-bullets {
+    font-weight: bold;
+}
